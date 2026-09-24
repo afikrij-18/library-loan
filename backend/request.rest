@@ -1,0 +1,38 @@
+### Get All Loans
+GET http://localhost:3000/peminjaman
+
+### Get Loan By ID
+GET http://localhost:3000/peminjaman/2
+
+### Create New Loan
+POST http://localhost:3000/peminjaman
+Content-Type: application/json
+
+{
+    "nama_peminjam": "Ahmad Fikri",
+    "judul_buku": "Belajar React Native",
+    "kategori": "Pemrograman",
+    "tanggal_pinjam": "2026-09-25",
+    "tanggal_kembali": "2026-09-27",
+    "status": ""
+}
+
+### Update Loan (PATCH)
+PATCH http://localhost:3000/peminjaman/2
+Content-Type: application/json
+
+{
+    "nama_peminjam": "Hal Jordan",
+    "judul_buku": "Bahasa Jepan N5",
+    "kategori": "Bahasa",
+    "tanggal_pinjam": "2026-09-20",
+    "tanggal_kembali": "2026-09-27",
+    "status": "Dipinjam"
+}
+
+
+### Delete Loan
+DELETE http://localhost:3000/peminjaman/1
+
+
+####
