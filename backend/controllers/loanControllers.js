@@ -77,3 +77,26 @@ export const deleteLoan = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+
+// Tambah banyak data peminjaman sekaligus (Bulk Create)
+export const bulkCreateLoans = async (req, res) => {
+  try {
+    const dataLoans = req.body;
+
+    // Validasi: pastikan body yang dikirim adalah array dan tidak kosong
+    if (!Array.isArray(dataLoans) || dataLoans.length === 0) {
+      return res.status(400).json({ message: "Payload harus berupa array data peminjaman!" });
+    }
+
+    // Menggunakan Sequelize bulkCreate untuk insert banyak data sekaligus
+    const response = await Loan.bulkCreate(dataLoans);
+
+    res.status(201).json({
+      message: `Berhasil menambahkan ${response.length} data peminjaman baru`,
+      data: response
+    });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};

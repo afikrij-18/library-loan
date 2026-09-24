@@ -2,27 +2,13 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <nav className="w-full bg-slate-300 border-b border-slate-200 shadow-sm px-4 py-3 flex justify-center items-center">
+  <div className="flex items-center justify-center">
+    <a href="/" className="px-4 py-2 text-xl font-bold text-slate-800 hover:bg-slate-100 rounded-lg transition-colors">
+      Perpustakaan Digital BPVP
+    </a>
   </div>
-  <div className="flex-none">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="bg-base-100 rounded-t-none p-2">
-            <li><a>Link 1</a></li>
-            <li><a>Link 2</a></li>
-          </ul>
-        </details>
-      </li>
-    </ul>
-  </div>
-</div>
-    </div>
+</nav>
   )
 }
 

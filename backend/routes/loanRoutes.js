@@ -4,7 +4,8 @@ import {
     getLoanById,
     createLoan,
     updateLoan,
-    deleteLoan
+    deleteLoan,
+    bulkCreateLoans
 } from "../controllers/loanControllers.js";
 
 const router = express.Router();
@@ -14,5 +15,6 @@ router.get('/peminjaman/:id', getLoanById);
 router.post('/peminjaman', createLoan);
 router.patch('/peminjaman/:id', updateLoan);
 router.delete('/peminjaman/:id', deleteLoan);
+router.post('/peminjaman/bulk', bulkCreateLoans);
 
 export default router;

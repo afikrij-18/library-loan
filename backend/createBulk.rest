@@ -1,0 +1,126 @@
+### Bulk Create (Tambah 15 Data Sekaligus)
+POST http://localhost:3000/peminjaman/bulk
+Content-Type: application/json
+
+[
+    {
+        "nama_peminjam": "Ahmad Fikri Jundana",
+        "judul_buku": "Belajar JavaScript Modern",
+        "kategori": "Programming",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Irfan Nabilla Arifin",
+        "judul_buku": "Clean Architecture",
+        "kategori": "Sains & Teknologi",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Taqiyyah Adha",
+        "judul_buku": "Dasar-Dasar UI/UX",
+        "kategori": "Design",
+        "tanggal_pinjam": "2026-09-23",
+        "tanggal_kembali": "2026-09-30",
+        "status": "Dikembalikan"
+    },
+    {
+        "nama_peminjam": "Frandy Puja Ferdian Pratama",
+        "judul_buku": "React JS untuk Pemula",
+        "kategori": "Programming",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Muhamad Zikri",
+        "judul_buku": "Node.js & Express API",
+        "kategori": "Programming",
+        "tanggal_pinjam": "2026-09-22",
+        "tanggal_kembali": "2026-09-29",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Gyenisa Syofia",
+        "judul_buku": "Filosofi Teras",
+        "kategori": "Self Development",
+        "tanggal_pinjam": "2026-09-21",
+        "tanggal_kembali": "2026-09-28",
+        "status": "Dikembalikan"
+    },
+    {
+        "nama_peminjam": "Habib Maulana Rizki",
+        "judul_buku": "Pengantar Machine Learning",
+        "kategori": "Sains & Teknologi",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Nugi Tri Darma",
+        "judul_buku": "Atomic Habits",
+        "kategori": "Self Development",
+        "tanggal_pinjam": "2026-09-20",
+        "tanggal_kembali": "2026-09-27",
+        "status": "Dikembalikan"
+    },
+    {
+        "nama_peminjam": "Nadini Mardiah Yasen",
+        "judul_buku": "Sejarah Dunia yang Disembunyikan",
+        "kategori": "Sejarah & Budaya",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Rizqon Nauval Zaloni",
+        "judul_buku": "Laskar Pelangi",
+        "kategori": "Fiksi Sastra",
+        "tanggal_pinjam": "2026-09-19",
+        "tanggal_kembali": "2026-09-26",
+        "status": "Dikembalikan"
+    },
+    {
+        "nama_peminjam": "Mayang Thursina",
+        "judul_buku": "Bumi Manusia",
+        "kategori": "Fiksi Sastra",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Muhammad Fadhil",
+        "judul_buku": "Kecerdasan Buatan dan Masa Depan",
+        "kategori": "Sains & Teknologi",
+        "tanggal_pinjam": "2026-09-22",
+        "tanggal_kembali": "2026-09-29",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Sri Ayu Novriawati",
+        "judul_buku": "Seni Berbicara di Depan Umum",
+        "kategori": "Self Development",
+        "tanggal_pinjam": "2026-09-23",
+        "tanggal_kembali": "2026-09-30",
+        "status": "Dikembalikan"
+    },
+    {
+        "nama_peminjam": "Nadiya Zafirah",
+        "judul_buku": "Psikologi Komunikasi",
+        "kategori": "Pendidikan",
+        "tanggal_pinjam": "2026-09-24",
+        "tanggal_kembali": "2026-10-01",
+        "status": "Dipinjam"
+    },
+    {
+        "nama_peminjam": "Yoga Pratama Fajri",
+        "judul_buku": "Database MySQL & Sequelize",
+        "kategori": "Programming",
+        "tanggal_pinjam": "2026-09-20",
+        "tanggal_kembali": "2026-09-27",
+        "status": "Dikembalikan"
+    }
+]

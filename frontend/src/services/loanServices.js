@@ -12,7 +12,7 @@ export async function getLoans() {
   return res.data;
 }
 
-export async function getLoanById() {
+export async function getLoanById(id) {
   const res = await api.get(`/peminjaman/${id}`);
   return res.data;
 }

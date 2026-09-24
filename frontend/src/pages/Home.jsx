@@ -137,7 +137,7 @@ function Home() {
           onChange={(e) => setStatusFilter(e.target.value)}
           className="px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 font-medium focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500"
         >
-          <option value="Semua">Semua Status (Aktif)</option>
+          <option value="Semua">Semua Status</option>
           <option value="Dipinjam">Dipinjam</option>
           <option value="Dikembalikan">Dikembalikan</option>
         </select>

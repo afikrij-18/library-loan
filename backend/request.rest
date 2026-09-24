@@ -2,7 +2,7 @@
 GET http://localhost:3000/peminjaman
 
 ### Get Loan By ID
-GET http://localhost:3000/peminjaman/2
+GET http://localhost:3000/peminjaman/18
 
 ### Create New Loan
 POST http://localhost:3000/peminjaman
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Update Loan (PATCH)
-PATCH http://localhost:3000/peminjaman/2
+PATCH http://localhost:3000/peminjaman/18
 Content-Type: application/json
 
 {
@@ -32,7 +32,7 @@ Content-Type: application/json
 
 
 ### Delete Loan
-DELETE http://localhost:3000/peminjaman/1
+DELETE http://localhost:3000/peminjaman/18
 
 
 ####
